@@ -1,0 +1,849 @@
+2012/02/05 01:31:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "SitioController".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/
+---
+2012/02/05 01:39:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pagina".' in D:\PHP\yii-1.1.9.r3527\framework\web\CController.php:484
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(271): CController->missingAction('pagina')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('pagina')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/pagina')
+#3 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/pagina&view=acerca_de
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/index
+---
+2012/02/05 01:41:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "productos".' in D:\PHP\yii-1.1.9.r3527\framework\web\CController.php:484
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(271): CController->missingAction('productos')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('productos')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/productos')
+#3 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/productos
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/index
+---
+2012/02/05 01:42:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contacto".' in D:\PHP\yii-1.1.9.r3527\framework\web\CController.php:484
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(271): CController->missingAction('contacto')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('contacto')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/contacto')
+#3 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/contacto
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/index
+---
+2012/02/05 01:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contacto".' in D:\PHP\yii-1.1.9.r3527\framework\web\CController.php:484
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(271): CController->missingAction('contacto')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('contacto')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/contacto')
+#3 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/contacto
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/index
+---
+2012/02/05 01:50:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "productos".' in D:\PHP\yii-1.1.9.r3527\framework\web\CController.php:484
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(271): CController->missingAction('productos')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('productos')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/productos')
+#3 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/productos
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/contacto
+---
+2012/02/05 01:50:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "acerca_de" was not found.' in D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('acerca_de')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('pagina')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/pagina')
+#7 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/pagina&view=acerca_de
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/contacto
+---
+2012/02/05 02:43:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "productos".' in D:\PHP\yii-1.1.9.r3527\framework\web\CController.php:484
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(271): CController->missingAction('productos')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('productos')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/productos')
+#3 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/productos
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/index
+---
+2012/02/05 02:43:51 [error] [exception.CException] exception 'CException' with message 'SitioController cannot find the requested view "productos".' in D:\PHP\yii-1.1.9.r3527\framework\web\CController.php:879
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): CController->renderPartial('productos', NULL, true)
+#1 C:\wamp\www\gelicious\protected\controllers\SitioController.php(39): CController->render('productos')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): SitioController->actionProductos()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('productos')
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/productos')
+#8 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/productos
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/index
+---
+2012/02/05 02:45:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "acerca_de" was not found.' in D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('acerca_de')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('pagina')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/pagina')
+#7 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/pagina&view=acerca_de
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/blog
+---
+2012/02/05 02:45:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "acerca_de" was not found.' in D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('acerca_de')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('pagina')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/pagina')
+#7 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/pagina&view=acerca_de
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/blog
+---
+2012/02/05 02:49:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "acerca_de" was not found.' in D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('acerca_de')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('pagina')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/pagina')
+#7 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/pagina&view=acerca_de
+HTTP_REFERER=http://localhost/gelicious/index.php
+---
+2012/02/05 04:56:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "acerca_de" was not found.' in D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('acerca_de')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('pagina')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/pagina')
+#7 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/pagina&view=acerca_de
+HTTP_REFERER=http://localhost/gelicious/index.php
+---
+2012/02/05 04:56:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/productos/index".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/index
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/pagina&view=acerca_de
+---
+2012/02/05 04:56:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "acerca_de" was not found.' in D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('acerca_de')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('pagina')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/pagina')
+#7 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/pagina&view=acerca_de
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos/index
+---
+2012/02/05 04:56:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/productos/index".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/index
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/pagina&view=acerca_de
+---
+2012/02/05 04:56:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/productos/index".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/index
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos/index
+---
+2012/02/05 04:56:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/productos/index".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/index
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos/index
+---
+2012/02/05 04:56:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/productos/index".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/index
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/blog
+---
+2012/02/06 05:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "acerca_de" was not found.' in D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php:113
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CViewAction.php(124): CViewAction->resolveView('acerca_de')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CAction.php(75): CViewAction->run()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CViewAction))
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('pagina')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/pagina')
+#7 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/pagina&view=acerca_de
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/blog
+---
+2012/02/06 05:56:48 [error] [php] Undefined variable: contenido (C:\wamp\www\gelicious\protected\views\layouts\main.php:49)
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\CContentDecorator.php(77): SitioController->renderFile()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(301): SitioController->endWidget()
+#5 C:\wamp\www\gelicious\protected\views\layouts\column1.php(5): SitioController->endContent()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): SitioController->renderInternal()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(785): SitioController->renderFile()
+#9 C:\wamp\www\gelicious\protected\controllers\SitioController.php(37): SitioController->render()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): SitioController->actionProductos()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): SitioController->runAction()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): SitioController->runActionWithFilters()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): SitioController->run()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=sitio/productos
+in C:\wamp\www\gelicious\protected\views\layouts\main.php (49)
+in C:\wamp\www\gelicious\protected\views\layouts\column1.php (5)
+in C:\wamp\www\gelicious\protected\controllers\SitioController.php (37)
+2012/02/06 06:07:50 [error] [exception.CException] exception 'CException' with message 'Property "SitioController.tituloPagina" is not defined.' in D:\PHP\yii-1.1.9.r3527\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\views\layouts\main.php(17): CComponent->__get('tituloPagina')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require('C:\wamp\www\gel...')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\gel...', Array, true)
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\wamp\www\gel...', Array, true)
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(207): COutputProcessor->run()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#8 C:\wamp\www\gelicious\protected\views\layouts\column1.php(5): CBaseController->endContent()
+#9 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require('C:\wamp\www\gel...')
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\gel...', Array, true)
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\gel...', Array, true)
+#12 C:\wamp\www\gelicious\protected\controllers\SitioController.php(37): CController->render('productos')
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): SitioController->actionProductos()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('productos')
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('sitio/productos')
+#19 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/gelicious/index.php?r=sitio/productos
+HTTP_REFERER=http://localhost/gelicious/index.php?r=sitio/blog
+---
+2012/02/06 06:24:54 [error] [exception.CException] exception 'CException' with message 'ProductosController cannot find the requested view "index".' in D:\PHP\yii-1.1.9.r3527\framework\web\CController.php:879
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#1 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(32): CController->render('index')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionIndex()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('index')
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#8 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/index
+HTTP_REFERER=http://localhost/gelicious/index.php
+---
+2012/02/06 19:56:33 [error] [exception.CException] exception 'CException' with message 'ProductosController and its behaviors do not have a method or closure named "layout".' in D:\PHP\yii-1.1.9.r3527\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\views\admin\productos\agregar.php(1): CComponent->__call('layout', Array)
+#1 C:\wamp\www\gelicious\protected\views\admin\productos\agregar.php(1): ProductosController->layout('admin')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require('C:\wamp\www\gel...')
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\gel...', NULL, true)
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\gel...', NULL, true)
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): CController->renderPartial('agregar', NULL, true)
+#6 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(37): CController->render('agregar')
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionAgregar()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('agregar')
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#13 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/agregar
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos/index
+---
+2012/02/06 20:08:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('gii')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=gii
+---
+2012/02/06 20:15:37 [error] [php] Undefined variable: model (C:\wamp\www\gelicious\protected\views\admin\productos\agregar.php:12)
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#2 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(37): ProductosController->render()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionAgregar()
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): ProductosController->runAction()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/agregar
+in C:\wamp\www\gelicious\protected\views\admin\productos\agregar.php (12)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (37)
+in C:\wamp\www\gelicious\index.php (13)
+2012/02/06 20:16:28 [error] [php] include(ProductoForm.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\PHP\yii-1.1.9.r3527\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(37): spl_autoload_call()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionAgregar()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(287): ProductosController->runAction()
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/agregar
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (37)
+in C:\wamp\www\gelicious\index.php (13)
+2012/02/06 20:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/login".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('site/login')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=site/login
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos
+---
+2012/02/06 20:29:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/index')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/index
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos/index
+---
+2012/02/06 20:31:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/index')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/index
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos/index
+---
+2012/02/06 20:31:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/index".' in D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/index')
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/index
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/index
+---
+2012/02/06 21:15:54 [error] [exception.CException] exception 'CException' with message 'Alias "zii.widget.jui.CJuiDatePicker" is invalid. Make sure it points to an existing PHP file.' in D:\PHP\yii-1.1.9.r3527\framework\YiiBase.php:318
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CWidgetFactory.php(147): YiiBase::import('zii.widget.jui....', true)
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ProductosController), 'zii.widget.jui....', Array)
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widget.jui....', Array)
+#3 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(56): CBaseController->widget('zii.widget.jui....', Array)
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require('C:\wamp\www\gel...')
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\gel...', Array, true)
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\gel...', Array, true)
+#7 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): CController->renderPartial('_form', Array)
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require('C:\wamp\www\gel...')
+#9 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\gel...', Array, true)
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\gel...', Array, true)
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(78): CController->render('create', Array)
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#21 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('create')
+#23 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#24 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos/index
+---
+2012/02/06 21:53:27 [error] [php] Undefined variable: categorias (C:\wamp\www\gelicious\protected\views\admin\productos\_form.php:32)
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#1 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#6 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(81): ProductosController->render()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#18 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (81)
+2012/02/06 21:53:46 [error] [php] get_class() expects parameter 1 to be object, array given (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:2009)
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php(1401): resolveNameID()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\CActiveForm.php(674): activeDropDownList()
+#2 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#6 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#9 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#11 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(81): ProductosController->render()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#21 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#22 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#23 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (81)
+2012/02/06 21:54:09 [error] [php] Trying to get property of non-object (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:2044)
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#4 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#9 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(81): ProductosController->render()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (81)
+2012/02/06 21:58:18 [error] [php] get_class() expects parameter 1 to be object, string given (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:2009)
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php(1401): resolveNameID()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\CActiveForm.php(674): activeDropDownList()
+#2 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#6 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#9 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#11 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(81): ProductosController->render()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#21 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#22 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#23 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (81)
+2012/02/06 21:58:32 [error] [php] get_class() expects parameter 1 to be object, string given (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:2009)
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php(1401): resolveNameID()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\CActiveForm.php(674): activeDropDownList()
+#2 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#6 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#9 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#11 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(81): ProductosController->render()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#21 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#22 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#23 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (81)
+2012/02/06 21:58:51 [error] [php] Invalid argument supplied for foreach() (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:1847)
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#4 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#9 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(81): ProductosController->render()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (81)
+2012/02/06 22:00:29 [error] [php] Invalid argument supplied for foreach() (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:1847)
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#4 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#9 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(81): ProductosController->render()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (81)
+2012/02/06 22:01:09 [error] [php] Invalid argument supplied for foreach() (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:1847)
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#4 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#9 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(81): ProductosController->render()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (81)
+2012/02/06 22:02:17 [error] [php] Invalid argument supplied for foreach() (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:1847)
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#4 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#9 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(81): ProductosController->render()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (81)
+2012/02/06 22:06:10 [error] [php] Invalid argument supplied for foreach() (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:1847)
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#4 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#9 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(82): ProductosController->render()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (82)
+2012/02/06 22:06:11 [error] [php] Invalid argument supplied for foreach() (D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php:1847)
+Stack trace:
+#0 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(32): CActiveForm->dropDownList()
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#4 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): ProductosController->renderPartial()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#9 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(82): ProductosController->render()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\create.php (15)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (82)
+2012/02/07 00:13:03 [error] [exception.CException] exception 'CException' with message 'Producto has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in D:\PHP\yii-1.1.9.r3527\framework\base\CModel.php:287
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\base\CModel.php(259): CModel->createValidators()
+#1 D:\PHP\yii-1.1.9.r3527\framework\base\CModel.php(302): CModel->getValidators('Nombre')
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php(1185): CModel->isAttributeRequired('Nombre')
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\widgets\CActiveForm.php(553): CHtml::activeLabelEx(Object(Producto), 'Nombre', Array)
+#4 C:\wamp\www\gelicious\protected\views\admin\productos\_form.php(13): CActiveForm->labelEx(Object(Producto), 'Nombre')
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require('C:\wamp\www\gel...')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\gel...', Array, true)
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\gel...', Array, true)
+#8 C:\wamp\www\gelicious\protected\views\admin\productos\create.php(15): CController->renderPartial('_form', Array)
+#9 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require('C:\wamp\www\gel...')
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\gel...', Array, true)
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\gel...', Array, true)
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(82): CController->render('create', Array)
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(50): ProductosController->actionCreate()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#22 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('create')
+#24 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#25 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/create
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos/index
+---
+2012/02/07 00:20:12 [error] [php] Undefined variable: categorias (C:\wamp\www\gelicious\protected\views\admin\productos\_form.php:32)
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#1 C:\wamp\www\gelicious\protected\views\admin\productos\update.php(18): ProductosController->renderPartial()
+#2 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require()
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): ProductosController->renderInternal()
+#4 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): ProductosController->renderFile()
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): ProductosController->renderPartial()
+#6 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(106): ProductosController->render()
+#7 unknown(0): ProductosController->actionUpdate()
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#9 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): ProductosController->runAction()
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): ProductosController->filterAccessControl()
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): ProductosController->runActionWithFilters()
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): ProductosController->run()
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#20 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\gelicious\index.php(13): CWebApplication->run()
+REQUEST_URI=/gelicious/index.php?r=admin/productos/update&id=1
+in C:\wamp\www\gelicious\protected\views\admin\productos\_form.php (32)
+in C:\wamp\www\gelicious\protected\views\admin\productos\update.php (18)
+in C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php (106)
+2012/02/07 00:23:56 [error] [exception.CException] exception 'CException' with message 'Property "Producto.Categoria" is not defined.' in D:\PHP\yii-1.1.9.r3527\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\PHP\yii-1.1.9.r3527\framework\db\ar\CActiveRecord.php(144): CComponent->__get('Categoria')
+#1 D:\PHP\yii-1.1.9.r3527\framework\web\helpers\CHtml.php(1696): CActiveRecord->__get('Categoria')
+#2 D:\PHP\yii-1.1.9.r3527\framework\zii\widgets\CDetailView.php(210): CHtml::value(Object(Producto), 'Categoria.Nombr...')
+#3 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(174): CDetailView->run()
+#4 C:\wamp\www\gelicious\protected\views\admin\productos\view.php(30): CBaseController->widget('zii.widgets.CDe...', Array)
+#5 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(127): require('C:\wamp\www\gel...')
+#6 D:\PHP\yii-1.1.9.r3527\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\gel...', Array, true)
+#7 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\gel...', Array, true)
+#8 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#9 C:\wamp\www\gelicious\protected\controllers\admin\ProductosController.php(55): CController->render('view', Array)
+#10 [internal function]: ProductosController->actionView('2')
+#11 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(ProductosController), Array)
+#12 D:\PHP\yii-1.1.9.r3527\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProductosController), Object(ReflectionMethod), Array)
+#13 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 D:\PHP\yii-1.1.9.r3527\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(292): CFilterChain->run()
+#20 D:\PHP\yii-1.1.9.r3527\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(276): CController->run('view')
+#22 D:\PHP\yii-1.1.9.r3527\framework\web\CWebApplication.php(135): CWebApplication->runController('admin/productos...')
+#23 D:\PHP\yii-1.1.9.r3527\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\gelicious\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/gelicious/index.php?r=admin/productos/view&id=2
+HTTP_REFERER=http://localhost/gelicious/index.php?r=admin/productos/create
+---
