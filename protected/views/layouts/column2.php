@@ -1,8 +1,6 @@
-<?php $this->beginContent('//layouts/main'); ?>
+<?php $this->beginContent('//layouts/admin'); ?>
 <div class="span-19">
-	<div id="content">
-		<?php echo $content; ?>
-	</div><!-- content -->
+	<?php echo $content; ?>
 </div>
 <div class="span-5 last">
 	<div id="sidebar">

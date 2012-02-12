@@ -4,6 +4,7 @@ class SitioController extends Controller
 {
 	/**
 	 * Declares class-based actions.
+	 * @return array
 	 */
 	public function actions()
 	{
@@ -35,7 +36,18 @@ class SitioController extends Controller
 
 	public function actionProductos()
 	{
-		$this->render('productos');
+		$productos=Producto::model()->findAll();
+		$this->render('productos', array(
+			'productos'=>$productos,
+		));
+	}
+
+	public function actionVerProducto($id)
+	{
+		$producto=Producto::model()->findByPk($id);
+		$this->render('ver_producto',array(
+			'producto'=>$producto
+		));
 	}
 
 	public function actionBlog()

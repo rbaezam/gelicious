@@ -1,29 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "producto".
+ * This is the model class for table "presentacion".
  *
- * The followings are the available columns in table 'producto':
+ * The followings are the available columns in table 'presentacion':
  * @property integer $Id
  * @property string $Nombre
- * @property string $Descripcion
- * @property string $Slug
- * @property integer $Categoria_Id
+ * @property string $Precio
  * @property integer $Visible
- * @property integer $Novedoso
- * @property string $Fecha_Publicacion
- * @property string $Clave
+ * @property integer $Producto_Id
  *
  * The followings are the available model relations:
- * @property Presentacion[] $presentaciones
- * @property Categoria $categoria
+ * @property Producto $producto
  */
-class Producto extends CActiveRecord
+class Presentacion extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Producto the static model class
+	 * @return Presentacion the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -35,7 +30,7 @@ class Producto extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'producto';
+		return 'presentacion';
 	}
 
 	/**
@@ -46,15 +41,13 @@ class Producto extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Nombre, Slug, Categoria_Id', 'required'),
-			array('Categoria_Id, Visible, Novedoso', 'numerical', 'integerOnly'=>true),
-			array('Nombre, Slug', 'length', 'max'=>50),
-			array('Clave', 'length', 'max'=>8),
-			array('Descripcion, Fecha_Publicacion', 'safe'),
-			array('Clave', 'unique'),
+			array('Nombre', 'required'),
+			array('Visible, Producto_Id', 'numerical', 'integerOnly'=>true),
+			array('Nombre', 'length', 'max'=>50),
+			array('Precio', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('Id, Nombre, Descripcion, Slug, Categoria_Id, Visible, Novedoso, Fecha_Publicacion, Clave', 'safe', 'on'=>'search'),
+			array('Id, Nombre, Precio, Visible, Producto_Id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,8 +59,7 @@ class Producto extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'presentaciones' => array(self::HAS_MANY, 'Presentacion', 'Producto_Id'),
-			'categoria' => array(self::BELONGS_TO, 'Categoria', 'Categoria_Id'),
+			'producto' => array(self::BELONGS_TO, 'Producto', 'Producto_Id'),
 		);
 	}
 
@@ -79,13 +71,9 @@ class Producto extends CActiveRecord
 		return array(
 			'Id' => 'ID',
 			'Nombre' => 'Nombre',
-			'Descripcion' => 'Descripcion',
-			'Slug' => 'Slug',
-			'Categoria_Id' => 'Categoria',
+			'Precio' => 'Precio',
 			'Visible' => 'Visible',
-			'Novedoso' => 'Novedoso',
-			'Fecha_Publicacion' => 'Fecha Publicacion',
-			'Clave' => 'Clave',
+			'Producto_Id' => 'Producto',
 		);
 	}
 
@@ -102,23 +90,12 @@ class Producto extends CActiveRecord
 
 		$criteria->compare('Id',$this->Id);
 		$criteria->compare('Nombre',$this->Nombre,true);
-		$criteria->compare('Descripcion',$this->Descripcion,true);
-		$criteria->compare('Slug',$this->Slug,true);
-		$criteria->compare('Categoria_Id',$this->Categoria_Id);
+		$criteria->compare('Precio',$this->Precio,true);
 		$criteria->compare('Visible',$this->Visible);
-		$criteria->compare('Novedoso',$this->Novedoso);
-		$criteria->compare('Fecha_Publicacion',$this->Fecha_Publicacion,true);
-		$criteria->compare('Clave',$this->Clave,true);
+		$criteria->compare('Producto_Id',$this->Producto_Id);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
-	}
-
-	public function beforeSave()
-	{
-		if($this->isNewRecord)
-			$this->Fecha_Publicacion = new CDbExpression('NOW()');
-		return parent::beforeSave();
 	}
 }

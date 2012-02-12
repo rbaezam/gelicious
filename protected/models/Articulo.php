@@ -1,29 +1,27 @@
 <?php
 
 /**
- * This is the model class for table "producto".
+ * This is the model class for table "articulo".
  *
- * The followings are the available columns in table 'producto':
+ * The followings are the available columns in table 'articulo':
  * @property integer $Id
- * @property string $Nombre
- * @property string $Descripcion
- * @property string $Slug
- * @property integer $Categoria_Id
- * @property integer $Visible
- * @property integer $Novedoso
+ * @property string $Titulo
+ * @property string $Texto
  * @property string $Fecha_Publicacion
- * @property string $Clave
+ * @property integer $Usuario_Id
+ * @property integer $Visible
+ * @property string $Slug
  *
  * The followings are the available model relations:
- * @property Presentacion[] $presentaciones
- * @property Categoria $categoria
+ * @property Usuario $usuario
+ * @property ArticuloEtiqueta[] $articuloEtiquetas
  */
-class Producto extends CActiveRecord
+class Articulo extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Producto the static model class
+	 * @return Articulo the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -35,7 +33,7 @@ class Producto extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'producto';
+		return 'articulo';
 	}
 
 	/**
@@ -46,15 +44,13 @@ class Producto extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Nombre, Slug, Categoria_Id', 'required'),
-			array('Categoria_Id, Visible, Novedoso', 'numerical', 'integerOnly'=>true),
-			array('Nombre, Slug', 'length', 'max'=>50),
-			array('Clave', 'length', 'max'=>8),
-			array('Descripcion, Fecha_Publicacion', 'safe'),
-			array('Clave', 'unique'),
+			array('Titulo', 'required'),
+			array('Usuario_Id, Visible', 'numerical', 'integerOnly'=>true),
+			array('Titulo, Slug', 'length', 'max'=>100),
+			array('Texto, Fecha_Publicacion', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('Id, Nombre, Descripcion, Slug, Categoria_Id, Visible, Novedoso, Fecha_Publicacion, Clave', 'safe', 'on'=>'search'),
+			array('Id, Titulo, Texto, Fecha_Publicacion, Usuario_Id, Visible, Slug', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,8 +62,8 @@ class Producto extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'presentaciones' => array(self::HAS_MANY, 'Presentacion', 'Producto_Id'),
-			'categoria' => array(self::BELONGS_TO, 'Categoria', 'Categoria_Id'),
+			'usuario' => array(self::BELONGS_TO, 'Usuario', 'Usuario_Id'),
+			'articuloEtiquetas' => array(self::HAS_MANY, 'ArticuloEtiqueta', 'Articulo_Id'),
 		);
 	}
 
@@ -78,14 +74,12 @@ class Producto extends CActiveRecord
 	{
 		return array(
 			'Id' => 'ID',
-			'Nombre' => 'Nombre',
-			'Descripcion' => 'Descripcion',
-			'Slug' => 'Slug',
-			'Categoria_Id' => 'Categoria',
-			'Visible' => 'Visible',
-			'Novedoso' => 'Novedoso',
+			'Titulo' => 'Titulo',
+			'Texto' => 'Texto',
 			'Fecha_Publicacion' => 'Fecha Publicacion',
-			'Clave' => 'Clave',
+			'Usuario_Id' => 'Usuario',
+			'Visible' => 'Visible',
+			'Slug' => 'Slug',
 		);
 	}
 
@@ -101,14 +95,12 @@ class Producto extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('Id',$this->Id);
-		$criteria->compare('Nombre',$this->Nombre,true);
-		$criteria->compare('Descripcion',$this->Descripcion,true);
-		$criteria->compare('Slug',$this->Slug,true);
-		$criteria->compare('Categoria_Id',$this->Categoria_Id);
-		$criteria->compare('Visible',$this->Visible);
-		$criteria->compare('Novedoso',$this->Novedoso);
+		$criteria->compare('Titulo',$this->Titulo,true);
+		$criteria->compare('Texto',$this->Texto,true);
 		$criteria->compare('Fecha_Publicacion',$this->Fecha_Publicacion,true);
-		$criteria->compare('Clave',$this->Clave,true);
+		$criteria->compare('Usuario_Id',$this->Usuario_Id);
+		$criteria->compare('Visible',$this->Visible);
+		$criteria->compare('Slug',$this->Slug,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

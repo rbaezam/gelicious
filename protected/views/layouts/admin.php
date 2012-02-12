@@ -38,14 +38,28 @@
 		)); ?>
 	</nav>
 	<div class="clear"/>
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
+	
+	<div class="span-18" id="content">
+		<?php if(isset($this->breadcrumbs)):?>
+			<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-
-	<div id="content">
+		<?php endif?>
 		<?php echo $content; ?>
+	</div>
+	<div class="span-5 last">
+		<div id="sidebar">
+		<?php
+			$this->beginWidget('zii.widgets.CPortlet', array(
+				'title'=>'Operaciones',
+			));
+			$this->widget('zii.widgets.CMenu', array(
+				'items'=>$this->menu,
+				'htmlOptions'=>array('class'=>'operations'),
+			));
+			$this->endWidget();
+		?>
+		</div><!-- sidebar -->
 	</div>
 
 	<div class="clear"></div>

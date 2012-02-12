@@ -1,11 +1,11 @@
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('Id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->Id), array('view', 'id'=>$data->Id)); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('Clave')); ?>:</b>
+	<?php echo CHtml::encode($data->Clave); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Nombre')); ?>:</b>
-	<?php echo CHtml::encode($data->Nombre); ?>
+	<?php echo CHtml::link(CHtml::encode($data->Nombre), array('view', 'id'=>$data->Id)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Descripcion')); ?>:</b>
@@ -17,15 +17,15 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Categoria_Id')); ?>:</b>
-	<?php echo CHtml::encode($data->Categoria_Id); ?>
+	<?php echo CHtml::encode($data->categoria->Nombre); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Visible')); ?>:</b>
-	<?php echo CHtml::encode($data->Visible); ?>
+	<?php echo CHtml::checkBox('visible', $data->Visible, array('disabled'=>'disabled')); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('Novedoso')); ?>:</b>
-	<?php echo CHtml::encode($data->Novedoso); ?>
+	<?php echo CHtml::checkBox('novedoso', $data->Novedoso, array('disabled'=>'disabled')); ?>
 	<br />
 
 	<?php /*

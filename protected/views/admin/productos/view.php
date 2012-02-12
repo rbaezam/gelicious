@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
 	'Productos'=>array('index'),
-	$model->Id,
+	$model->Nombre,
 );
 
 $this->menu=array(
@@ -13,12 +13,12 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Producto #<?php echo $model->Id; ?></h1>
+<h1>Ver Producto: "<?php echo $model->Nombre; ?>"</h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'Id',
+		'Clave',
 		'Nombre',
 		'Descripcion',
 		'Slug',
@@ -26,8 +26,20 @@ $this->menu=array(
 			'label'=>'Categoría',
 			'value'=>$model->categoria->Nombre,
 		),
-		'Visible',
-		'Novedoso',
-		'Fecha_Publicacion',
+		array(
+			'label'=>'Visible?',
+			'type'=>'raw',
+			'value'=>CHtml::checkBox('Visible', $model->Visible, array('disabled'=>'disabled'))
+		),
+		array(
+			'label'=>'Novedoso?',
+			'type'=>'raw',
+			'value'=>CHtml::checkBox('Novedoso', $model->Novedoso, array('disabled'=>'disabled'))
+		),
+		array(
+			'label'=>'Publicado',
+			'type'=>'raw',
+			'value'=>date('d/m/y', strtotime($model->Fecha_Publicacion))
+		)
 	),
 )); ?>

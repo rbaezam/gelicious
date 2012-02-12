@@ -6,8 +6,32 @@ class ProductosController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/admin';
 
+	function slugify($text)
+	{
+		// replace non letter or digits by -
+		$text = preg_replace('~[^\\pL\d]+~u', '-', $text);
+
+		// trim
+		$text = trim($text, '-');
+
+		// transliterate
+		$text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+		// lowercase
+		$text = strtolower($text);
+
+		// remove unwanted characters
+		$text = preg_replace('~[^-\w]+~', '', $text);
+
+		if (empty($text))
+		{
+			return 'n-a';
+		}
+
+		return $text;
+	}
 	/**
 	 * @return array action filters
 	 */
@@ -72,6 +96,7 @@ class ProductosController extends Controller
 		if(isset($_POST['Producto']))
 		{
 			$model->attributes=$_POST['Producto'];
+			$model->Slug=$this->slugify($model->Nombre);
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->Id));
 		}
@@ -91,8 +116,13 @@ class ProductosController extends Controller
 	{
 		$model=$this->loadModel($id);
 
+		$modelPresentacion=new Presentacion;
+
+		$catModelo=Categoria::model()->findAll();
+		$categorias=CHtml::listData($catModelo,'Id','Nombre');
+
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Producto']))
 		{
@@ -103,6 +133,8 @@ class ProductosController extends Controller
 
 		$this->render('update',array(
 			'model'=>$model,
+			'modelPresentacion'=>$modelPresentacion,
+			'categorias'=>$categorias
 		));
 	}
 
